@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controller\PostController;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
