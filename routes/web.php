@@ -35,6 +35,6 @@ Route::get('/posts', [PostController::class, 'index'])->middleware(['auth', 'ver
 
 Route::get('/posts/create', [PostController::class, 'create'])->middleware(['auth', 'verified'])->name('posts.create');
 
-Route::get('/posts', [PostController::class, 'store'])->middleware(['auth', 'verified'])->name('posts.store');
+Route::post('/posts', [PostController::class, 'store'])->middleware(['auth', 'verified'])->name('posts.store');
 
 Route::get('/posts/{post}', [PostController::class, 'show'])->middleware(['auth', 'verified'])->name('posts.show');

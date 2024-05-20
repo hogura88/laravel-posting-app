@@ -58,7 +58,7 @@ class PostTest extends TestCase
      public function test_user_can_access_posts_create() {
         $user = User::factory()->create();
 
-        $response = $this->actingAs($user)->get(route('posts.creste'));
+        $response = $this->actingAs($user)->get(route('posts.create'));
 
         $response->assertStatus(200);
      }

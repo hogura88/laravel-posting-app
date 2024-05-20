@@ -25,8 +25,8 @@ class PostController extends Controller
 
     public function store(PostRequest $request) {
         $post = new Post();
-        $post->title = &request->input('title');
-        $post->content = &request->input('content');
+        $post->title = $request->input('title');
+        $post->content = $request->input('content');
         $post->user_id = Auth::id();
         $post->save();
 
