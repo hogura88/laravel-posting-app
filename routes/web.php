@@ -39,6 +39,6 @@ Route::post('/posts', [PostController::class, 'store'])->middleware(['auth', 've
 
 Route::get('/posts/{post}', [PostController::class, 'show'])->middleware(['auth', 'verified'])->name('posts.show');
 
-Route::get('/posts/{posts}/edit', [PostController::class, 'edit'])->middleware(['auth', 'verified'])->name('posts.edit');
+Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->middleware(['auth', 'verified'])->name('posts.edit');
 
-Route::patch('/posts/{posts}', [PostController::class, 'update'])->middleware(['auth', 'verified'])->name('posts.update');
+Route::patch('/posts/{post}', [PostController::class, 'update'])->middleware(['auth', 'verified'])->name('posts.update');
