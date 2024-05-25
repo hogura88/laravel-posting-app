@@ -13,9 +13,12 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+
+     <link href="{{ asset('css/style.css') }}" rel="stylesheet" >
  </head>
  
  <body>
+ <div class="wrapper">
      <header>
          <nav class="navbar navbar-light bg-light">
              <a href="{{ route('posts.index') }}" class="navbar-brand">投稿アプリ</a>
@@ -69,6 +72,7 @@
      <footer class="d-flex justify-content-center align-items-center bg-light">
          <p class="text-muted small mb-0">&copy; 投稿アプリ All rights reserved.</p>
      </footer>
+      </div>
  </body>
  
  </html>
